@@ -95,8 +95,6 @@ Additional vscode settings I use:
 
 ```json
 {
-  // ...
-  
   "material-icon-theme.folders.associations": {
     "units": "packages",
     "main": "components",
