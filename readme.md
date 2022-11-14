@@ -87,3 +87,23 @@ dev:web
 | Svelte     | https://svelte.dev/              |
 | TypeScript | https://www.typescriptlang.org/  |
 | Sass       | https://sass-lang.com/           |
+
+
+## Other stuff
+
+Additional vscode settings I use:
+
+```json
+{
+  // ...
+  
+  "material-icon-theme.folders.associations": {
+    "units": "packages",
+    "main": "components",
+    "preload": "components",
+    "web": "components",
+    "out": "app",
+    "vests-win32-x64": "app",
+  }
+}
+```

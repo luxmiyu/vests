@@ -8,7 +8,7 @@
   "scripts": {
     "start": "electron .",
     "build": "npm run build:web && npm run build:preload && npm run build:main",
-    "package": "npx electron-packager ./ --platform=win32 --arch=x64 --icon=./assets/icon.ico --overwrite",
+    "package": "npx electron-packager ./ --platform=win32 --arch=x64 --icon=./assets/icon.ico --ignore=units --ignore=.vscode --ignore=.gitignore --ignore=tsconfig.node.json --out=./out --overwrite",
     "build:main": "tsc -p units/main/tsconfig.json --noEmit && vite build units/main",
     "build:preload": "tsc -p units/preload/tsconfig.json --noEmit && vite build units/preload",
     "build:web": "tsc -p units/web/tsconfig.json --noEmit && vite build units/web",
