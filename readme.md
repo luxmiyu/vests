@@ -95,6 +95,8 @@ Additional vscode settings I use:
 
 ```json
 {
+  "explorer.excludeGitIgnore": false,
+  "npm.exclude": "**/out/**",
   "material-icon-theme.folders.associations": {
     "units": "packages",
     "main": "components",
@@ -102,6 +104,6 @@ Additional vscode settings I use:
     "web": "components",
     "out": "app",
     "vests-win32-x64": "app",
-  }
+  },
 }
 ```

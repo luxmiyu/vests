@@ -33,7 +33,10 @@ async function createWindow() {
 
 app.on('second-instance', () => {
   createWindow().catch((err) =>
-    console.error('Error while trying to prevent second-instance Electron event:', err)
+    console.error(
+      'Error while trying to prevent second-instance Electron event:',
+      err
+    )
   )
 })
 
