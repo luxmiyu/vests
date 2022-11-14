@@ -1,6 +1,6 @@
 {
   "name": "vests",
-  "description": "VESTS: Boilerplate for a Vite + Electron + Svelte + TypeScript + SASS project.",
+  "description": "VESTS: Boilerplate for a Vite + Electron + Svelte + TypeScript + Sass project.",
   "private": true,
   "version": "1.0.0",
   "type": "module",
