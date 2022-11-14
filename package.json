@@ -1,0 +1,29 @@
+{
+  "name": "vests",
+  "description": "VESTS: Boilerplate for a Vite + Electron + Svelte + TypeScript + SASS project.",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "main": "dist/main/index.cjs",
+  "scripts": {
+    "start": "electron .",
+    "build": "npm run build:web && npm run build:preload && npm run build:main",
+    "package": "npx electron-packager ./ --platform=win32 --arch=x64 --icon=./assets/icon.ico --overwrite",
+    "build:main": "tsc -p units/main/tsconfig.json --noEmit && vite build units/main",
+    "build:preload": "tsc -p units/preload/tsconfig.json --noEmit && vite build units/preload",
+    "build:web": "tsc -p units/web/tsconfig.json --noEmit && vite build units/web",
+    "dev:web": "vite units/web"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^1.1.0",
+    "@tsconfig/svelte": "^3.0.0",
+    "electron": "^21.2.3",
+    "sass": "^1.56.1",
+    "svelte": "^3.52.0",
+    "svelte-check": "^2.9.2",
+    "svelte-preprocess": "^4.10.7",
+    "tslib": "^2.4.0",
+    "typescript": "^4.6.4",
+    "vite": "^3.2.3"
+  }
+}

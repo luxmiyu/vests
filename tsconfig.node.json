@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "lib": ["ES2019"]
+  },
+  "include": [
+    "vite.config.ts",
+    "units/renderer/vite.config.ts",
+    "units/main/vite.config.ts",
+    "units/preload/vite.config.ts"
+  ]
+}
